@@ -1,0 +1,65 @@
+[{
+  "_id": {
+    "$oid": "68482a8d6476c60e456b29d6"
+  },
+  "sector_name": "ICT and Digital Economy",
+  "createdAt": {
+    "$date": "2025-06-10T12:52:29.005Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-23T20:02:20.063Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68482aa06476c60e456b29da"
+  },
+  "sector_name": "Innovation and Research",
+  "createdAt": {
+    "$date": "2025-06-10T12:52:48.224Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-10T12:52:48.224Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68482b616476c60e456b29de"
+  },
+  "sector_name": "Affiliated Institutions",
+  "createdAt": {
+    "$date": "2025-06-10T12:56:01.885Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-10T12:56:01.885Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68482b766476c60e456b29e2"
+  },
+  "sector_name": "Minister's Office",
+  "createdAt": {
+    "$date": "2025-06-10T12:56:22.141Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-10T12:56:22.141Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68482b846476c60e456b29e6"
+  },
+  "sector_name": "Admin Issues",
+  "createdAt": {
+    "$date": "2025-06-10T12:56:36.908Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-10T12:56:36.908Z"
+  },
+  "__v": 0
+}]

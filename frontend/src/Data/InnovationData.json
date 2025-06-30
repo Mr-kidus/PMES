@@ -1,0 +1,92 @@
+{
+  "kpis": [
+    {
+      "id": 1,
+      "goal": "Innovation",
+      "kra": "Customer Growth",
+      "kpiName": "New Customers",
+      "year": 2025,
+      "q1": 50,
+      "q2": 60,
+      "q3": 70,
+      "q4": 300
+    },
+    {
+      "id": 2,
+      "goal": "Innovation",
+      "kra": "Customer Growth",
+      "kpiName": "New Customers",
+      "year": 2025,
+      "q1": 50,
+      "q2": 60,
+      "q3": 70,
+      "q4": 300
+    },
+    {
+      "id": 3,
+      "goal": "Innovation",
+      "kra": "Customer Growth",
+      "kpiName": "New Customers",
+      "year": 2025,
+      "q1": 50,
+      "q2": 60,
+      "q3": 70,
+      "q4": 300
+    },
+    {
+      "id": 4,
+      "goal": "Innovation",
+      "kra": "Customer Growth",
+      "kpiName": "New Customers",
+      "year": 2025,
+      "q1": 50,
+      "q2": 60,
+      "q3": 70,
+      "q4": 300
+    },
+    {
+      "id": 5,
+      "goal": "Innovation",
+      "kra": "E-Platform",
+      "kpiName": "New Customers",
+      "year": 2025,
+      "q1": 50,
+      "q2": 60,
+      "q3": 70,
+      "q4": 300
+    },
+    {
+      "id": 6,
+      "goal": "Innovation",
+      "kra": "E-Platform",
+      "kpiName": "New Customers",
+      "year": 2025,
+      "q1": 50,
+      "q2": 60,
+      "q3": 70,
+      "q4": 300
+    },
+    {
+      "id": 7,
+      "goal": "Innovation",
+      "kra": "E-Platform",
+      "kpiName": "New Customers",
+      "year": 2025,
+      "q1": 50,
+      "q2": 60,
+      "q3": 70,
+      "q4": 300
+    },
+    {
+      "id": 8,
+      "goal": "Innovation",
+      "kra": "E-Platform",
+      "kpiName": "New Customers",
+      "year": 2025,
+      "q1": 50,
+      "q2": 60,
+      "q3": 70,
+      "q4": 300
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Table</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100 p-6">
+    <table class="min-w-full bg-white">
+      <thead>
+        <tr class="bg-green-500 text-white">
+          <th class="w-1/4 py-2">Indicator</th>
+          <th class="w-1/4 py-2">Value</th>
+          <th class="w-1/4 py-2">Validate</th>
+          <th class="w-1/4 py-2">Validation Comment</th>
+        </tr>
+      </thead>
+      <tbody id="table-body">
+        <!-- Dynamic rows will be inserted here -->
+      </tbody>
+    </table>
+
+    <script>
+      const data = [
+        { type: "goal", text: "Goal" },
+        { type: "kra", text: "KRA" },
+        { type: "kpi", indicator: "KPI 1", value: "50.0 / 30.0" },
+        { type: "kpi", indicator: "KPI 2", value: "50.0 / 38.0" },
+        { type: "kpi", indicator: "KPI 3", value: "23.0 / 24.0" },
+        { type: "kpi", indicator: "KPI 4", value: "70.0 / 64.0" },
+        { type: "kpi", indicator: "KPI 5", value: "10 / 23.0" },
+      ];
+
+      const tableBody = document.getElementById("table-body");
+
+      data.forEach((item) => {
+        const row = document.createElement("tr");
+        if (item.type === "goal" || item.type === "kra") {
+          row.className = "bg-green-500 text-white";
+          row.innerHTML = `<td colspan="4" class="py-2">${item.text}</td>`;
+        } else if (item.type === "kpi") {
+          row.innerHTML = `
+                    <td class="border px-4 py-2">${item.indicator}</td>
+                    <td class="border px-4 py-2">${item.value}</td>
+                    <td class="border px-4 py-2"><input type="checkbox"></td>
+                    <td class="border px-4 py-2"><input type="text" placeholder="Enter comment..." class="w-full"></td>
+                `;
+        }
+        tableBody.appendChild(row);
+      });
+    </script>
+  </body>
+</html>

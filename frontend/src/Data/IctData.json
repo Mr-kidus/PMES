@@ -1,0 +1,147 @@
+{
+  "kpis": [
+    {
+      "id": 1,
+      "goal": "ICT",
+      "kra": "Customer Growth",
+      "kpiName": "New Customers",
+      "year": 2025,
+      "q1": 50,
+      "q2": 60,
+      "q3": 70,
+      "q4": 300
+    },
+    {
+      "id": 1,
+      "goal": "ICT",
+      "kra": "Customer Growth",
+      "kpiName": "New Customers",
+      "year": 2025,
+      "q1": 50,
+      "q2": 60,
+      "q3": 70,
+      "q4": 300
+    },
+    {
+      "id": 1,
+      "goal": "ICT",
+      "kra": "Customer Growth",
+      "kpiName": "New Customers",
+      "year": 2025,
+      "q1": 50,
+      "q2": 60,
+      "q3": 70,
+      "q4": 300
+    },
+    {
+      "id": 1,
+      "goal": "ICT",
+      "kra": "Customer Growth",
+      "kpiName": "New Customers",
+      "year": 2025,
+      "q1": 50,
+      "q2": 60,
+      "q3": 70,
+      "q4": 300
+    },
+    {
+      "id": 2,
+      "goal": "ICT",
+      "kra": "Customer Growth",
+      "kpiName": "Satr",
+      "year": 2025,
+      "q1": 50,
+      "q2": 60,
+      "q3": 70,
+      "q4": 80
+    },
+    {
+      "id": 3,
+      "goal": "ICT",
+      "kra": "CheepCost",
+      "kpiName": "Satr",
+      "year": 2025,
+      "q1": 50,
+      "q2": 60,
+      "q3": 70,
+      "q4": 80
+    },
+    {
+      "id": 3,
+      "goal": "ICT",
+      "kra": "CheepCost",
+      "kpiName": "Satr",
+      "year": 2025,
+      "q1": 50,
+      "q2": 60,
+      "q3": 70,
+      "q4": 80
+    },
+    {
+      "id": 3,
+      "goal": "ICT",
+      "kra": "CheepCost",
+      "kpiName": "Satr",
+      "year": 2025,
+      "q1": 50,
+      "q2": 60,
+      "q3": 70,
+      "q4": 80
+    },
+    {
+      "id": 3,
+      "goal": "ICT",
+      "kra": "CheepCost",
+      "kpiName": "Satr",
+      "year": 2025,
+      "q1": 50,
+      "q2": 60,
+      "q3": 70,
+      "q4": 80
+    },
+    {
+      "id": 4,
+      "goal": "ICT",
+      "kra": "Customer Growth",
+      "kpiName": "Satr",
+      "year": 2025,
+      "q1": 50,
+      "q2": 60,
+      "q3": 70,
+      "q4": 80
+    },
+    {
+      "id": 4,
+      "goal": "ICT",
+      "kra": "Customer Growth",
+      "kpiName": "Satr",
+      "year": 2025,
+      "q1": 50,
+      "q2": 60,
+      "q3": 70,
+      "q4": 80
+    },
+    {
+      "id": 4,
+      "goal": "ICT",
+      "kra": "Customer Growth",
+      "kpiName": "Satr",
+      "year": 2025,
+      "q1": 50,
+      "q2": 60,
+      "q3": 70,
+      "q4": 80
+    },
+    {
+      "id": 4,
+      "goal": "ICT",
+      "kra": "Customer Growth",
+      "kpiName": "Satr",
+      "year": 2025,
+      "q1": 50,
+      "q2": 60,
+      "q3": 70,
+      "q4": 80
+    }
+  ]
+}

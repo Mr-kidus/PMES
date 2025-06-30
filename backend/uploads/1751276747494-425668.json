@@ -1,0 +1,392 @@
+[{
+  "_id": {
+    "$oid": "68482ba56476c60e456b29f0"
+  },
+  "sectorId": {
+    "$oid": "68482a8d6476c60e456b29d6"
+  },
+  "subsector_name": "National E-government Services",
+  "createdAt": {
+    "$date": "2025-06-10T12:57:09.181Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-10T12:57:09.181Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68482be86476c60e456b29f6"
+  },
+  "sectorId": {
+    "$oid": "68482a8d6476c60e456b29d6"
+  },
+  "subsector_name": "ICT Infrastructure & Development Management",
+  "createdAt": {
+    "$date": "2025-06-10T12:58:16.218Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-10T12:58:16.218Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68482bfc6476c60e456b29fc"
+  },
+  "sectorId": {
+    "$oid": "68482a8d6476c60e456b29d6"
+  },
+  "subsector_name": "Digital Economy Development Sector",
+  "createdAt": {
+    "$date": "2025-06-10T12:58:36.902Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-10T12:58:36.902Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68482c146476c60e456b2a02"
+  },
+  "sectorId": {
+    "$oid": "68482aa06476c60e456b29da"
+  },
+  "subsector_name": "National Research",
+  "createdAt": {
+    "$date": "2025-06-10T12:59:00.088Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-10T12:59:00.088Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68482c236476c60e456b2a08"
+  },
+  "sectorId": {
+    "$oid": "68482aa06476c60e456b29da"
+  },
+  "subsector_name": "Technology Transformation",
+  "createdAt": {
+    "$date": "2025-06-10T12:59:15.405Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-10T12:59:15.405Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68482c386476c60e456b2a0e"
+  },
+  "sectorId": "68482aa06476c60e456b29da",
+  "subsector_name": "Technology Innovation & Management",
+  "createdAt": {
+    "$date": "2025-06-10T12:59:36.091Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-10T12:59:36.091Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68482c486476c60e456b2a14"
+  },
+  "sectorId": {
+    "$oid": "68482b616476c60e456b29de"
+  },
+  "subsector_name": "Intellectual Property",
+  "createdAt": {
+    "$date": "2025-06-10T12:59:52.814Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-10T12:59:52.814Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68482c586476c60e456b2a1a"
+  },
+  "sectorId": {
+    "$oid": "68482b616476c60e456b29de"
+  },
+  "subsector_name": "Technology Authority",
+  "createdAt": {
+    "$date": "2025-06-10T13:00:08.452Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-10T13:00:08.452Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68482c6b6476c60e456b2a20"
+  },
+  "sectorId": {
+    "$oid": "68482b616476c60e456b29de"
+  },
+  "subsector_name": "Bio & Emerging Technology",
+  "createdAt": {
+    "$date": "2025-06-10T13:00:27.501Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-10T13:00:27.501Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68482c786476c60e456b2a26"
+  },
+  "sectorId": {
+    "$oid": "68482b616476c60e456b29de"
+  },
+  "subsector_name": "Space Science & Geospatial",
+  "createdAt": {
+    "$date": "2025-06-10T13:00:40.610Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-10T13:00:40.610Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68482c896476c60e456b2a2c"
+  },
+  "sectorId": {
+    "$oid": "68482b616476c60e456b29de"
+  },
+  "subsector_name": "ICT Park",
+  "createdAt": {
+    "$date": "2025-06-10T13:00:57.099Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-10T13:00:57.099Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68482c9a6476c60e456b2a32"
+  },
+  "sectorId": {
+    "$oid": "68482b766476c60e456b29e2"
+  },
+  "subsector_name": "Innovation Fund",
+  "createdAt": {
+    "$date": "2025-06-10T13:01:14.816Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-10T13:01:14.816Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68482cb26476c60e456b2a38"
+  },
+  "sectorId": {
+    "$oid": "68482b766476c60e456b29e2"
+  },
+  "subsector_name": "Policy & StrategyStudies Research",
+  "createdAt": {
+    "$date": "2025-06-10T13:01:38.678Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-10T13:01:38.678Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68482cb86476c60e456b2a3e"
+  },
+  "sectorId": {
+    "$oid": "68482b766476c60e456b29e2"
+  },
+  "subsector_name": "Legal Service",
+  "createdAt": {
+    "$date": "2025-06-10T13:01:44.618Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-10T13:01:44.618Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68482cc56476c60e456b2a44"
+  },
+  "sectorId": {
+    "$oid": "68482b766476c60e456b29e2"
+  },
+  "subsector_name": "Ethics",
+  "createdAt": {
+    "$date": "2025-06-10T13:01:57.626Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-10T13:01:57.626Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68482cda6476c60e456b2a4a"
+  },
+  "sectorId": "68482b766476c60e456b29e2",
+  "subsector_name": "Public Relation",
+  "createdAt": {
+    "$date": "2025-06-10T13:02:18.108Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-10T13:02:18.108Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68482cf46476c60e456b2a50"
+  },
+  "sectorId": {
+    "$oid": "68482b766476c60e456b29e2"
+  },
+  "subsector_name": "Women & Social Affairs",
+  "createdAt": {
+    "$date": "2025-06-10T13:02:44.581Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-10T13:02:44.581Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68482d066476c60e456b2a56"
+  },
+  "sectorId": "68482b766476c60e456b29e2",
+  "subsector_name": "Audit Service",
+  "createdAt": {
+    "$date": "2025-06-10T13:03:02.851Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-10T13:03:02.851Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68482d146476c60e456b2a5c"
+  },
+  "sectorId": "68482b766476c60e456b29e2",
+  "subsector_name": "Reform",
+  "createdAt": {
+    "$date": "2025-06-10T13:03:16.776Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-10T13:03:16.776Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68482d236476c60e456b2a62"
+  },
+  "sectorId": {
+    "$oid": "68482b766476c60e456b29e2"
+  },
+  "subsector_name": "Partnership & Collaboration",
+  "createdAt": {
+    "$date": "2025-06-10T13:03:31.246Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-10T13:03:31.246Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68482d316476c60e456b2a68"
+  },
+  "sectorId": {
+    "$oid": "68482b846476c60e456b29e6"
+  },
+  "subsector_name": "Strategic Affairs",
+  "createdAt": {
+    "$date": "2025-06-10T13:03:45.925Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-10T13:03:45.925Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68482d486476c60e456b2a6e"
+  },
+  "sectorId": {
+    "$oid": "68482b846476c60e456b29e6"
+  },
+  "subsector_name": "Procurement & Finance",
+  "createdAt": {
+    "$date": "2025-06-10T13:04:08.487Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-10T13:04:08.487Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68482d5b6476c60e456b2a74"
+  },
+  "sectorId": {
+    "$oid": "68482b846476c60e456b29e6"
+  },
+  "subsector_name": "General Services",
+  "createdAt": {
+    "$date": "2025-06-10T13:04:27.781Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-10T13:04:27.781Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68482d6a6476c60e456b2a7a"
+  },
+  "sectorId": {
+    "$oid": "68482b846476c60e456b29e6"
+  },
+  "subsector_name": "Human Resources",
+  "createdAt": {
+    "$date": "2025-06-10T13:04:42.894Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-10T13:04:42.894Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68482df26476c60e456b2a8e"
+  },
+  "sectorId": {
+    "$oid": "68482b846476c60e456b29e6"
+  },
+  "subsector_name": "Information Communication Technology",
+  "createdAt": {
+    "$date": "2025-06-10T13:06:58.481Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-10T13:06:58.481Z"
+  },
+  "__v": 0
+}]

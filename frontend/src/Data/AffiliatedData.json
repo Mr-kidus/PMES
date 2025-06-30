@@ -1,0 +1,125 @@
+{
+  "kpis": [
+    {
+      "id": 1,
+      "goal": "Affiliated",
+      "kra": "Customer Growth",
+      "kpiName": "New Customers",
+      "year": 2025,
+      "q1": 50,
+      "q2": 60,
+      "q3": 70,
+      "q4": 300
+    },
+    {
+      "id": 2,
+      "goal": "Affiliated",
+      "kra": "Customer Growth",
+      "kpiName": "Satr",
+      "year": 2025,
+      "q1": 50,
+      "q2": 60,
+      "q3": 70,
+      "q4": 80
+    },
+    {
+      "id": 3,
+      "goal": "Affiliated",
+      "kra": "Customer Growth",
+      "kpiName": "Satr",
+      "year": 2025,
+      "q1": 50,
+      "q2": 60,
+      "q3": 70,
+      "q4": 80
+    },
+    {
+      "id": 4,
+      "goal": "Affiliated",
+      "kra": "Customer Growth",
+      "kpiName": "Satr",
+      "year": 2025,
+      "q1": 50,
+      "q2": 60,
+      "q3": 70,
+      "q4": 80
+    },
+    {
+      "id": 5,
+      "goal": "Affiliated",
+      "kra": "Customer Growth",
+      "kpiName": "Satr",
+      "year": 2025,
+      "q1": 50,
+      "q2": 60,
+      "q3": 70,
+      "q4": 80
+    },
+    {
+      "id": 6,
+      "goal": "Affiliated",
+      "kra": "Health",
+      "kpiName": "Satr",
+      "year": 2025,
+      "q1": 50,
+      "q2": 60,
+      "q3": 70,
+      "q4": 80
+    },
+    {
+      "id": 7,
+      "goal": "Affiliated",
+      "kra": "Health",
+      "kpiName": "Satr",
+      "year": 2025,
+      "q1": 50,
+      "q2": 60,
+      "q3": 70,
+      "q4": 80
+    },
+    {
+      "id": 8,
+      "goal": "Affiliated",
+      "kra": "Health",
+      "kpiName": "Satr",
+      "year": 2025,
+      "q1": 50,
+      "q2": 60,
+      "q3": 70,
+      "q4": 80
+    },
+    {
+      "id": 9,
+      "goal": "Affiliated",
+      "kra": "Health",
+      "kpiName": "Satr",
+      "year": 2025,
+      "q1": 50,
+      "q2": 60,
+      "q3": 70,
+      "q4": 80
+    },
+    {
+      "id": 10,
+      "goal": "Affiliated",
+      "kra": "Health",
+      "kpiName": "Satr",
+      "year": 2025,
+      "q1": 50,
+      "q2": 60,
+      "q3": 70,
+      "q4": 80
+    },
+    {
+      "id": 11,
+      "goal": "Affiliated",
+      "kra": "Health",
+      "kpiName": "Satr",
+      "year": 2025,
+      "q1": 50,
+      "q2": 60,
+      "q3": 70,
+      "q4": 80
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+/* Custom utility layers come after the import */
+@layer utilities {
+  .scrollbar-hidden {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .scrollbar-hidden::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+  }
+
+  .shadow-black-all {
+    box-shadow:
+      0 -4px 6px -1px rgba(0, 0, 0, 0.1),
+      0 4px 6px -1px rgba(0, 0, 0, 0.1),
+      4px 0 6px -1px rgba(0, 0, 0, 0.1),
+      -4px 0 6px -1px rgba(0, 0, 0, 0.1);
+  }
+
+  .shadow-blue-all {
+    box-shadow:
+      0 -4px 6px -1px rgba(0, 0, 255, 0.1),
+      0 4px 6px -1px rgba(0, 0, 255, 0.1),
+      4px 0 6px -1px rgba(0, 0, 255, 0.1),
+      -4px 0 6px -1px rgba(0, 0, 255, 0.1);
+  }
+
+  .scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari, Opera */
+}
+}
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+}
