@@ -8,7 +8,7 @@ export const getResultFrameworkMenu = async (req, res) => {
 
     // group subsectors by sectorId for quick lookup
     const subsectorsBySector = subsectors.reduce((acc, sub) => {
-      const key = sub.sectorId.toString();
+      const key = sub?.sectorId?.toString();
       if (!acc[key]) acc[key] = [];
       acc[key].push({ _id: sub._id, name: sub.subsector_name });
       return acc;
