@@ -57,13 +57,14 @@ app.use(cookieParser());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Allowed origins
+// ✅ CORS Setup (Fixed)
 const allowedOrigins = [
   "https://pmes-gimp.onrender.com",
-  "https://mint-pmes.onrender.com"
+  "https://mint-pmes.onrender.com",
+  // "http://localhost:5173", // Uncomment for local dev
 ];
 
-app.use(cors({
+const corsOptions = {
   origin: function (origin, callback) {
     if (!origin || allowedOrigins.includes(origin)) {
       callback(null, true);
@@ -71,8 +72,13 @@ app.use(cors({
       callback(new Error("Not allowed by CORS"));
     }
   },
-  credentials: true
-}));
+  credentials: true,
+  methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization"],
+};
+
+app.use(cors(corsOptions));
+app.options("*", cors(corsOptions)); // 🟢 Handle preflight requests
 
 // Static files for uploads
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
@@ -122,10 +128,8 @@ app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "frontend", "dist", "index.html"));
 });
 
-// Setup HTTP server
+// HTTP + Socket.IO server
 const server = http.createServer(app);
-
-// Setup Socket.IO
 const io = new Server(server, {
   cors: {
     origin: "https://mint-pmes.onrender.com",
