@@ -57,14 +57,14 @@ app.use(cookieParser());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// ✅ CORS Setup (Fixed)
+// Allowed origins
 const allowedOrigins = [
   "https://pmes-gimp.onrender.com",
-  "https://mint-pmes.onrender.com",
-  // "http://localhost:5173", // Uncomment for local dev
+  "https://mint-pmes.onrender.com"
 ];
 
-const corsOptions = {
+// CORS setup with fix
+app.use(cors({
   origin: function (origin, callback) {
     if (!origin || allowedOrigins.includes(origin)) {
       callback(null, true);
@@ -72,22 +72,18 @@ const corsOptions = {
       callback(new Error("Not allowed by CORS"));
     }
   },
-  credentials: true,
-  methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
-  allowedHeaders: ["Content-Type", "Authorization"],
-};
+  credentials: true
+}));
 
-app.use(cors(corsOptions));
-app.options("*", cors(corsOptions)); // 🟢 Handle preflight requests
-
-// Static files for uploads
+// Static files
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
-// API Routes
+// Root route
 app.get("/", (req, res) => {
   res.send("online server");
 });
 
+// Route registration
 app.get("/api/profile", authMiddleware, profileRouter);
 app.use("/api/users", userRouter);
 app.use("/api/admin", adminRouter);
@@ -112,24 +108,20 @@ app.use("/api/target-validation", targetRouter);
 app.use("/api/performance-validation", performanceValidationRouter);
 app.use("/api/chat", chatRouter);
 app.use("/api/users/update-profile", profileRouter);
-app.use("/api/performance", performanceRoutes);
+app.use('/api/performance', performanceRoutes);
 app.use("/api/kpi-table", KpiTableRouter);
 app.use("/api/kra2", kra2Router);
 app.use("/api/kpi2", kpi2Router);
-app.use("/api/measure-assignment", measureAssignmentRouter);
+app.use('/api/measure-assignment', measureAssignmentRouter);
 app.use("/api/measure", kpiMeasureRouter);
 app.use("/api/worker-plans", workerPlanRouter);
 app.use("/api/worker-performance", WorkerPerformanceRouter);
-app.use("/api/notify", notifyRouter);
+app.use('/api/notify', notifyRouter);
 
-// Serve static files from React/Vite build (must come after API routes)
-app.use(express.static(path.join(__dirname, "frontend/dist")));
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "frontend", "dist", "index.html"));
-});
-
-// HTTP + Socket.IO server
+// Create HTTP server
 const server = http.createServer(app);
+
+// Socket.io setup
 const io = new Server(server, {
   cors: {
     origin: "https://mint-pmes.onrender.com",
@@ -154,10 +146,9 @@ io.on("connection", (socket) => {
   });
 });
 
+// Export if needed elsewhere
 export { io, onlineUsers, server };
 
-// Start server
+// Server listen
 const PORT = process.env.PORT || 1221;
-server.listen(PORT, () => {
-  console.log(`✅ Backend running on port ${PORT}`);
-});
+server.listen(PORT, () => console.log(`✅ Backend running on port ${PORT}`));
