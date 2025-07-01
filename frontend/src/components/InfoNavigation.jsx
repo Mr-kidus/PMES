@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import useThemeStore from "../store/themeStore";
 
-const BACKEND_URL = "http://localhost:1221"; // Adjust if needed
+const BACKEND_URL = "https://pmes-gimp.onrender.com"; // Adjust if needed
 
 const InfoNavigation = () => {
   const dark = useThemeStore((state) => state.dark);

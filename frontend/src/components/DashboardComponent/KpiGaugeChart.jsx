@@ -22,7 +22,7 @@ const KpiGaugeChart = () => {
   useEffect(() => {
     const fetchRatioData = async () => {
       try {
-        const res = await axios.get("http://localhost:1221/api/kpi-table-data/table-data", {
+        const res = await axios.get("https://pmes-gimp.onrender.com/api/kpi-table-data/table-data", {
           params: {
             userId: user?._id,
             year,

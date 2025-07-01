@@ -3,7 +3,7 @@ import axios from "axios";
 import useAuthStore from "../../store/auth.store";
 import useThemeStore from "../../store/themeStore";
 
-const backendUrl = "http://localhost:1221";
+const backendUrl = "https://pmes-gimp.onrender.com";
 
 export default function GroupChat({ onSelectGroup, selectedGroup }) {
   const dark = useThemeStore((s) => s.dark);

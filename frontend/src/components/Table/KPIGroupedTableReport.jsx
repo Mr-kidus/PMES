@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import KPITableReport from "./KPITableReport";
 import useAuthStore from "../../store/auth.store";
 
-const BACKEND_URL = "http://localhost:1221";
+const BACKEND_URL = "https://pmes-gimp.onrender.com";
 
 function getCurrentEthiopianYear() {
   const today = new Date();

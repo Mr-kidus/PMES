@@ -8,7 +8,7 @@ import * as XLSX from "xlsx";
 import { jsPDF } from "jspdf";
 import autoTable from "jspdf-autotable";
 
-const backendUrl = "http://localhost:1221";
+const backendUrl = "https://pmes-gimp.onrender.com";
 
 const WorkerPerformanceReport = () => {
   const { user } = useAuthStore();

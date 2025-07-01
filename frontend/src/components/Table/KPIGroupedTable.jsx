@@ -5,7 +5,7 @@ import PerformanceModal from "./PerformanceModal";
 import RatioModal from "./RatioModal";
 import useAuthStore from "../../store/auth.store";
 
-const BACKEND_URL = "http://localhost:1221";
+const BACKEND_URL = "https://pmes-gimp.onrender.com";
 
 // Calculate current Ethiopian year based on Gregorian date
 function getCurrentEthiopianYear() {

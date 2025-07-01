@@ -5,7 +5,7 @@ import ViewUsers from "./ViewUsers";
 import PasswordManager from "./PasswordManager";
 import useThemeStore from "../store/themeStore";
 
-const BASE_URL = "http://localhost:1221";
+const BASE_URL = "https://pmes-gimp.onrender.com";
 
 const tabs = [
   { label: "Add User", key: "add" },

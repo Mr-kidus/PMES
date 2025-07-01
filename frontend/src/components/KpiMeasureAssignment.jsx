@@ -3,7 +3,7 @@ import axios from "axios";
 import useThemeStore from "../store/themeStore";
 import useAuthStore from "../store/auth.store";
 
-const backendUrl = "http://localhost:1221";
+const backendUrl = "https://pmes-gimp.onrender.com";
 
 function getCurrentEthiopianYear() {
   const today = new Date();

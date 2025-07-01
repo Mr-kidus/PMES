@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import useThemeStore from "../../store/themeStore";
 
-const backendUrl = "http://localhost:1221";
+const backendUrl = "https://pmes-gimp.onrender.com";
 
 export default function FindUser({ onSelectUser }) {
   const dark = useThemeStore((s) => s.dark);

@@ -7,7 +7,7 @@ import jsPDF from "jspdf";
 import autoTable from "jspdf-autotable";
 import useThemeStore from "../store/themeStore";
 
-const backendUrl = "http://localhost:1221";
+const backendUrl = "https://pmes-gimp.onrender.com";
 const ROWS_PER_PAGE = 10;
 
 export default function ViewUsers() {

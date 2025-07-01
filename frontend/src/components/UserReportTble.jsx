@@ -12,7 +12,7 @@ function UserReportTable() {
     const fetchReport = async () => {
       try {
         const res = await axios.get(
-          "http://localhost:1221/api/reports/generate-report",
+          "https://pmes-gimp.onrender.com/api/reports/generate-report",
           {
             headers: {
               Authorization: `Bearer ${localStorage.getItem("token")}`,

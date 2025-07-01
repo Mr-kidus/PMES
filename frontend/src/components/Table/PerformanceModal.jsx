@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import useThemeStore from "../../store/themeStore";
 
-const BASE_URL = "http://localhost:1221";
+const BASE_URL = "https://pmes-gimp.onrender.com";
 
 function PerformanceModal({ modalInfo, closeModal, handleFormSubmit }) {
   const dark = useThemeStore((state) => state.dark);

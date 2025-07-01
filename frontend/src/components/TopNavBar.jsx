@@ -22,7 +22,7 @@ function TopNavBar({ sidebarOpen, setSidebarOpen }) {
   const fetchUnreadCount = useCallback(async () => {
     if (!user?._id) return;
     try {
-      const res = await axios.get(`http://localhost:1221/api/chat/unread`, {
+      const res = await axios.get(`https://pmes-gimp.onrender.com/api/chat/unread`, {
         withCredentials: true,
       });
       setUnreadCount(res.data.count || 0);
@@ -34,7 +34,7 @@ function TopNavBar({ sidebarOpen, setSidebarOpen }) {
   const fetchNotifications = useCallback(async () => {
     if (!user?._id) return;
     try {
-      const res = await axios.get(`http://localhost:1221/api/notify/${user._id}`);
+      const res = await axios.get(`https://pmes-gimp.onrender.com/api/notify/${user._id}`);
       const data = res.data || [];
       const unread = data.filter((n) => !n.isRead);
       setNotifCount(unread.length);

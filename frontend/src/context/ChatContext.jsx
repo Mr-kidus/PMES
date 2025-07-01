@@ -3,7 +3,7 @@ import axios from "axios";
 import { io } from "socket.io-client";
 
 const ChatContext = createContext();
-const SOCKET_URL = "http://localhost:1221";
+const SOCKET_URL = "https://pmes-gimp.onrender.com";
 
 export function useChat() {
   return useContext(ChatContext);
@@ -18,7 +18,7 @@ export function ChatProvider({ children }) {
     // Fetch unread count on mount
     const fetchUnread = async () => {
       try {
-        const res = await axios.get("http://localhost:1221/api/chat/unread", { withCredentials: true });
+        const res = await axios.get("https://pmes-gimp.onrender.com/api/chat/unread", { withCredentials: true });
         setUnreadCount(res.data.count || 0);
       } catch {
         setUnreadCount(0);
@@ -29,7 +29,7 @@ export function ChatProvider({ children }) {
 
   useEffect(() => {
     let userId;
-    axios.get("http://localhost:1221/api/users/get-profile", { withCredentials: true })
+    axios.get("https://pmes-gimp.onrender.com/api/users/get-profile", { withCredentials: true })
       .then(res => {
         userId = res.data._id;
         socketRef.current = io(SOCKET_URL, { withCredentials: true });

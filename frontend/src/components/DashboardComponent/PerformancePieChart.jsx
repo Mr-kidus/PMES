@@ -4,7 +4,7 @@ import useAuthStore from "../../store/auth.store";
 import useThemeStore from "../../store/themeStore";
 import axios from "axios";
 
-const backendUrl = "http://localhost:1221";
+const backendUrl = "https://pmes-gimp.onrender.com";
 
 const COLORS_LIGHT = ["#76dd82", "#4b49ac", "#74c1e9", "#d17d57"];
 const COLORS_DARK = ["#4caf50", "#6c63ff", "#2196f3", "#ff7043"];

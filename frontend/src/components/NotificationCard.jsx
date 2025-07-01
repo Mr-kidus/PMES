@@ -4,7 +4,7 @@ import { Bell, CheckCircle, FolderOpen } from "lucide-react";
 import useAuthStore from "../store/auth.store";
 import useThemeStore from "../store/themeStore";
 
-const backendUrl = "http://localhost:1221";
+const backendUrl = "https://pmes-gimp.onrender.com";
 
 function NotificationCard() {
   const { user } = useAuthStore();

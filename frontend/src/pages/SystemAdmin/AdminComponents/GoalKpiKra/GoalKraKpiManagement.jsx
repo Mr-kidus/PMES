@@ -7,7 +7,7 @@ import autoTable from "jspdf-autotable";
 import { FaFileExcel, FaFilePdf } from "react-icons/fa";
 import useThemeStore from "../../../../store/themeStore";
 
-const BASE_URL = "http://localhost:1221/api";
+const BASE_URL = "https://pmes-gimp.onrender.com/api";
 
 function GoalKraKpiManagement() {
   const { dark } = useThemeStore();

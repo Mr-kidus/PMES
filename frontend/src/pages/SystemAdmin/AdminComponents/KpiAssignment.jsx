@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import useThemeStore from "../../../store/themeStore"; // adjust path as needed
 
-const backendUrl = "http://localhost:1221";
+const backendUrl = "https://pmes-gimp.onrender.com";
 
 const KpiAssignment = () => {
   const dark = useThemeStore((state) => state.dark);

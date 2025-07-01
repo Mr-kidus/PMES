@@ -11,7 +11,7 @@ import {
   ResponsiveContainer,
 } from "recharts";
 
-const API_BASE = "http://localhost:1221";
+const API_BASE = "https://pmes-gimp.onrender.com";
 
 const AddGoalKraKpi = () => {
   const [goalDesc, setGoalDesc] = useState("");

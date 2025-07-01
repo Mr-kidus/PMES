@@ -6,7 +6,7 @@ import KPIGroupedTableReport from "../Table/KPIGroupedTableReport";
 import useAuthStore from "../../store/auth.store";
 import useThemeStore from "../../store/themeStore";
 
-const BACKEND_URL = "http://localhost:1221";
+const BACKEND_URL = "https://pmes-gimp.onrender.com";
 
 function AllSectorReport() {
   const { user } = useAuthStore();
