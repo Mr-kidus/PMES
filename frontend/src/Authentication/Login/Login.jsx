@@ -108,18 +108,7 @@ function Login() {
           </p>
         </div>
 
-        <div className="grid grid-cols-4  gap-4 mt-8">
-          <img
-            src="https://www.mint.gov.et/documents/d/guest/2-3-jpg?imagePreview=1"
-            alt="gallery1"
-            className="rounded-lg h-64 object-cover col-span-2"
-          />
-          <img
-            src="https://www.mint.gov.et/documents/d/guest/1-38-jpg?imagePreview=1"
-            alt="gallery2"
-            className="rounded-lg h-64  object-cover col-span-2"
-          />
-        </div>
+        
 
         <footer
           className={`${dark ? "text-gray-400" : "text-gray-300"} mt-8 text-xs`}
