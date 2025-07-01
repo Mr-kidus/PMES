@@ -213,6 +213,7 @@ function AppContent() {
           <Route path="planning" element={<WorkerPlans />} />
           <Route path="performance" element={<WorkerPerformanceSubmission />} />
           <Route path="worker-report" element={<WorkerPerformanceReport />} />
+          <Route path="notification" element={<NotificationCard />} />
         </Route>
 
         {/* 404 */}
