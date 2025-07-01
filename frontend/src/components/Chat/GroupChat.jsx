@@ -60,7 +60,7 @@ export default function GroupChat({ onSelectGroup, selectedGroup }) {
     });
   };
 
-  const filteredUsers = allUsers.filter(u => u.fullName.toLowerCase().includes(search.toLowerCase()));
+  const filteredUsers = allUsers.filter(u => u.fullName?.toLowerCase().includes(search.toLowerCase()));
   const wrapperBg = dark ? "bg-gray-800 border-gray-700 text-white" : "bg-[rgba(13,42,92,0.08)] border-[rgba(13,42,92,0.1)] text-[#0D2A5C]";
   const hoverBg = dark ? "hover:bg-gray-700" : "hover:bg-blue-50";
 
