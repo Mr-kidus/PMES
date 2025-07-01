@@ -9,7 +9,7 @@ import http from "http";
 import { Server } from "socket.io";
 
 // Import multer middleware
-import {upload} from "./middlewares/multer.js";
+import { upload } from "./middlewares/multer.js";
 
 // Routes and Middleware
 import authMiddleware from "./middlewares/authMiddleware.js";
@@ -42,23 +42,28 @@ import workerPlanRouter from "./routes/workerPlanRoute.js";
 import WorkerPerformanceRouter from "./routes/workerPerformanceRoutes.js";
 import notifyRouter from "./routes/notifyRoutes.js";
 
+// Setup for __dirname in ES Module
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
+// Load environment variables and connect DB
 dotenv.config();
 connectDB();
 
 const app = express();
 
+// Middleware
 app.use(cookieParser());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+// Allowed origins
 const allowedOrigins = [
   "https://pmes-gimp.onrender.com",
   "https://mint-pmes.onrender.com"
 ];
 
+// CORS setup with fix
 app.use(cors({
   origin: function (origin, callback) {
     if (!origin || allowedOrigins.includes(origin)) {
@@ -70,12 +75,15 @@ app.use(cors({
   credentials: true
 }));
 
-
-
-// Serve uploaded files statically from absolute path
+// Static files
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
-// Routes setup
+// Root route
+app.get("/", (req, res) => {
+  res.send("online server");
+});
+
+// Route registration
 app.get("/api/profile", authMiddleware, profileRouter);
 app.use("/api/users", userRouter);
 app.use("/api/admin", adminRouter);
@@ -94,7 +102,7 @@ app.use("/api/assign", kpiAssignmentRouter);
 app.use("/api/menu", menuRouter);
 app.use("/api/year", kpiYearAssignmentRouter);
 app.use("/api", planRoutes);
-app.use('/api/plans', planRouter);
+app.use("/api/plans", planRouter);
 app.use("/api", performanceRoutes);
 app.use("/api/target-validation", targetRouter);
 app.use("/api/performance-validation", performanceValidationRouter);
@@ -110,8 +118,10 @@ app.use("/api/worker-plans", workerPlanRouter);
 app.use("/api/worker-performance", WorkerPerformanceRouter);
 app.use('/api/notify', notifyRouter);
 
-// Socket.io setup
+// Create HTTP server
 const server = http.createServer(app);
+
+// Socket.io setup
 const io = new Server(server, {
   cors: {
     origin: "https://mint-pmes.onrender.com",
@@ -136,11 +146,9 @@ io.on("connection", (socket) => {
   });
 });
 
-app.get("/", (req, res) => {
-  res.send("online server");
-});
-
+// Export if needed elsewhere
 export { io, onlineUsers, server };
 
+// Server listen
 const PORT = process.env.PORT || 1221;
 server.listen(PORT, () => console.log(`✅ Backend running on port ${PORT}`));
