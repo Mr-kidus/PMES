@@ -63,7 +63,6 @@ const allowedOrigins = [
   "https://mint-pmes.onrender.com"
 ];
 
-// CORS setup with fix
 app.use(cors({
   origin: function (origin, callback) {
     if (!origin || allowedOrigins.includes(origin)) {
@@ -75,15 +74,14 @@ app.use(cors({
   credentials: true
 }));
 
-// Static files
+// Static files for uploads
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
-// Root route
+// API Routes
 app.get("/", (req, res) => {
   res.send("online server");
 });
 
-// Route registration
 app.get("/api/profile", authMiddleware, profileRouter);
 app.use("/api/users", userRouter);
 app.use("/api/admin", adminRouter);
@@ -108,20 +106,26 @@ app.use("/api/target-validation", targetRouter);
 app.use("/api/performance-validation", performanceValidationRouter);
 app.use("/api/chat", chatRouter);
 app.use("/api/users/update-profile", profileRouter);
-app.use('/api/performance', performanceRoutes);
+app.use("/api/performance", performanceRoutes);
 app.use("/api/kpi-table", KpiTableRouter);
 app.use("/api/kra2", kra2Router);
 app.use("/api/kpi2", kpi2Router);
-app.use('/api/measure-assignment', measureAssignmentRouter);
+app.use("/api/measure-assignment", measureAssignmentRouter);
 app.use("/api/measure", kpiMeasureRouter);
 app.use("/api/worker-plans", workerPlanRouter);
 app.use("/api/worker-performance", WorkerPerformanceRouter);
-app.use('/api/notify', notifyRouter);
+app.use("/api/notify", notifyRouter);
 
-// Create HTTP server
+// Serve static files from React/Vite build (must come after API routes)
+app.use(express.static(path.join(__dirname, "frontend/dist")));
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "frontend", "dist", "index.html"));
+});
+
+// Setup HTTP server
 const server = http.createServer(app);
 
-// Socket.io setup
+// Setup Socket.IO
 const io = new Server(server, {
   cors: {
     origin: "https://mint-pmes.onrender.com",
@@ -146,9 +150,10 @@ io.on("connection", (socket) => {
   });
 });
 
-// Export if needed elsewhere
 export { io, onlineUsers, server };
 
-// Server listen
+// Start server
 const PORT = process.env.PORT || 1221;
-server.listen(PORT, () => console.log(`✅ Backend running on port ${PORT}`));
+server.listen(PORT, () => {
+  console.log(`✅ Backend running on port ${PORT}`);
+});
