@@ -136,8 +136,8 @@ io.on("connection", (socket) => {
   });
 });
 
-app.get("/api/online-users", (req, res) => {
-  res.json(Array.from(onlineUsers.keys()));
+app.get("/", (req, res) => {
+  res.send("online server");
 });
 
 export { io, onlineUsers, server };
