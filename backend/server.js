@@ -54,12 +54,23 @@ app.use(cookieParser());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.use(
-  cors({
-    origin: "http://localhost:5173",
-    credentials: true,
-  })
-);
+const allowedOrigins = [
+  "https://pmes-gimp.onrender.com",
+  "https://mint-pmes.onrender.com"
+];
+
+app.use(cors({
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
+  credentials: true
+}));
+
+
 
 // Serve uploaded files statically from absolute path
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
@@ -103,7 +114,7 @@ app.use('/api/notify', notifyRouter);
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: "http://localhost:5173",
+    origin: "https://mint-pmes.onrender.com",
     credentials: true,
   },
 });
@@ -123,6 +134,10 @@ io.on("connection", (socket) => {
       }
     }
   });
+});
+
+app.get("/api/online-users", (req, res) => {
+  res.json(Array.from(onlineUsers.keys()));
 });
 
 export { io, onlineUsers, server };
